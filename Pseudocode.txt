@@ -1,0 +1,8 @@
+For getComputerChoice
+Generate a random number between 0 and 1
+Divide the range 0 to 1 into three equal parts
+Assign each part to "rock," "paper" or "scissors"
+Depending on which range the random number falls into, 
+    return "rock," "paper" or "scissors:
+Assign value to variable computerChoice
+Print computerChoice
