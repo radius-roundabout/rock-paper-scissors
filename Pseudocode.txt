@@ -1,8 +1,40 @@
 For getComputerChoice
 Generate a random number between 0 and 1
 Divide the range 0 to 1 into three equal parts
-Assign each part to "rock," "paper" or "scissors"
+Assign each part to "rock," "paper" or "scissors"  //Should have spelled out as "if" statements
 Depending on which range the random number falls into, 
     return "rock," "paper" or "scissors:
 Assign value to variable computerChoice
 Print computerChoice
+
+
+playRound function
+
+IF human choice is rock and computer choice is paper:
+    Output "You lose! Paper beats rock."
+    INCREMENT computerScore.
+
+ElSE IF human choice is rock and computer choice is scissors:
+    Output "You win! Rock beats scissors."
+    INCREMENT humanScore.
+
+ELSE IF human choice is paper and computer choice is rock:
+    Output "You win! Paper beats rock." 
+    INCREMENT humanScore.
+
+ELSE IF human choice is paper and computer choice is scissors:
+    Output "You lose! Scissors beat paper."
+    INCREMENT computerScore;
+
+ELSE IF human choice is scissors and computer choice is rock:
+    Output "You lose! Rock beats scissors."
+    INCREMENT computerScore;
+
+ELSE IF human choice is scissors and computer choice is paper:
+    Output "You win! Scissors beats paper."
+    INCREMENT humanScore.
+
+ELSE IF human choice is the same as computer choice:
+    Output "It's a draw."
+
+END IF
