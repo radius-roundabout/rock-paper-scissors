@@ -35,25 +35,21 @@ function getComputerChoice() {
     while (randomNumber == 0);
 
     if (randomNumber >= 1 && randomNumber <= 3) {
-        return "Rock";
+        return computerInput = "rock";
     } else if (randomNumber > 3 && randomNumber <= 6) {
-        return "Paper";
+        return computerInput = "paper";
     } else if (randomNumber > 6 && randomNumber <= 9) {
-        return "Scissors";
+        return computerInput = "scissors";
     }
 
 }
 
-computerInput = getComputerChoice().toLowerCase();
-
-console.log(computerInput);
-
-humanInput = prompt("Choose \"rock\", \"paper\", or \"scissors.\"").toLowerCase();
-
-console.log(humanInput);
+function getHumanChoice() {
+    return humanInput = prompt("Choose \"rock\", \"paper\", or \"scissors.\"").toLowerCase();
+}
 
 function playRound(humanChoice, computerChoice) {
-
+    
         if (humanChoice == "rock" && computerChoice == "paper") {
             computerScore++;
             return "You lose! Paper beats rock.";
@@ -89,9 +85,31 @@ function playRound(humanChoice, computerChoice) {
         }
 }
 
-console.log(playRound(humanInput, computerInput))
-console.log("Human score is " + humanScore +".");
-console.log("Computer score is " + computerScore + ".");
+function playGame() {
+    getHumanChoice();
+    getComputerChoice();
+    console.log("Human choice is " + humanInput + ".");
+    console.log("Computer choice is " + computerInput + ".")
+
+    console.log(playRound(humanInput, computerInput));
+    console.log("Human score is " + humanScore +".");
+    console.log("Computer score is " + computerScore + ".");
+
+}
+    
+playGame();
+playGame();
+playGame();
+playGame();
+playGame();
+
+if (humanScore > computerScore) {
+    console.log("Congrats! You won.");
+} else if (humanScore < computerScore) {
+    console.log("Sorry, you lose.");
+} else {
+    console.log("You tied.")
+}
 
 
 // let humanTest = "rock";
