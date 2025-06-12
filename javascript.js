@@ -1,5 +1,3 @@
-console.log("Hello, World!")
-
 let randomNumber;
 let computerScore = 0;
 let humanScore = 0;

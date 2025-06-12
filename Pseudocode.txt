@@ -38,3 +38,10 @@ ELSE IF human choice is the same as computer choice:
     Output "It's a draw."
 
 END IF
+
+
+playGame
+
+Call playRound
+Call getHumanChoice and getComputerChoice
+Repeat
